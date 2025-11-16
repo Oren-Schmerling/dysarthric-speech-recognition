@@ -11,6 +11,7 @@ name = "downloadpytorch"
 [packages]
 torch = {version = "*", index = "downloadpytorch"}
 torchvision = {version = "*", index = "downloadpytorch"}
+numpy = "*"
 
 [dev-packages]
 
