@@ -4,7 +4,7 @@
 #SBATCH --partition=gpu                  # Partition name (change if necessary)
 #SBATCH --gres=gpu:1                     # Request one GPU
 #SBATCH --mem=16G                        # Memory required (16GB as a safe margin)
-#SBATCH --time=04:00:00                 # Time limit hrs:min:sec
+#SBATCH --time=10:00:00                 # Time limit hrs:min:sec
 #SBATCH --nodes=1                        # Number of nodes
 
 # Load necessary modules if required (example for Python)
