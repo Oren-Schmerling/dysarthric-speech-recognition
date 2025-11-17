@@ -4,4 +4,4 @@ This is a ML research project owned by Oren Schmerling and Walter Lloyd with the
 
 ## Running the code
 
-Set up your environment with `pipenv shell` and then `pipenv install`
+Set up your environment with `pipenv --python 3.11` and then `pipenv install`
