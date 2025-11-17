@@ -8,7 +8,7 @@
 #SBATCH --nodes=1                        # Number of nodes
 
 # Load necessary modules if required (example for Python)
-module load python/3.11  # Adjust or remove based on your environment
+module load python/3.11.7  # Adjust or remove based on your environment
 
 # Activate virtual environment and run the job
 cd /home/oschmerling_umass_edu/dysarthric-speech-recognition/
