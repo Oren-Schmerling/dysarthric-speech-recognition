@@ -1,19 +1,19 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
 
 [[source]]
-url = "https://download.pytorch.org/whl/cu130"
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
 verify_ssl = true
-name = "downloadpytorch"
 
 [packages]
-torch = {version = "*", index = "downloadpytorch"}
-torchvision = {version = "*", index = "downloadpytorch"}
-numpy = "*"
+torch = {version = "==2.4.0", index = "pytorch-cu121"}
+torchvision = {version = "==0.19.0", index = "pytorch-cu121"}
+torchaudio = {version = "==2.4.0", index = "pytorch-cu121"}
+torchcodec = {version = "==0.1.0", index = "pytorch-cu121"}
+numpy = "==1.26.4"
+sox = "*"
 
 [dev-packages]
-
-[requires]
-python_version = "3.13"
