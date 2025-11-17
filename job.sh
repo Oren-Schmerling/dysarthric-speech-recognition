@@ -11,10 +11,8 @@
 module load python/3.11  # Adjust or remove based on your environment
 
 # Activate virtual environment and run the job
-cd /path/to/your/project
+cd /home/oschmerling_umass_edu/dysarthric-speech-recognition/
 python3 -m venv venv
 source venv/bin/activate
-pip install pipenv
-pipenv install
-pipenv shell
+pip install -r requirements.txt
 python modelCompare.py --domain_a_dir "/home/oschmerling_umass_edu/UASpeech/Copy of UASpeech_original_C" --domain_b_dir "/home/oschmerling_umass_edu/UASpeech/Copy of UASpeech_original_FM"
