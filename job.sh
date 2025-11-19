@@ -9,11 +9,8 @@
 
 # Load necessary modules if required (example for Python)
 module load python/3.11.7  # Adjust or remove based on your environment
-module load ffmpeg/7.0.2
 
 # Activate virtual environment and run the job
 cd /home/oschmerling_umass_edu/dysarthric-speech-recognition/
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+conda env create -f environment.yml -n cenv
 python modelCompare.py --domain_a_dir "/home/oschmerling_umass_edu/UASpeech/Copy of UASpeech_original_C" --domain_b_dir "/home/oschmerling_umass_edu/UASpeech/Copy of UASpeech_original_FM"
