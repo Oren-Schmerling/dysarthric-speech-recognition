@@ -182,7 +182,7 @@ class UnpairedAudioDataset(Dataset):
         return max(len(self.files_a), len(self.files_b))
 
     def _load_waveform(self, path: str) -> torch.Tensor:
-        waveform, sr = torchaudio.load(path, format="wav", backend="ffmpeg")
+        waveform, sr = torchaudio.load(path, format="wav", backend="sox")
         if waveform.size(0) > 1:
             waveform = waveform.mean(dim=0, keepdim=True)
         if sr != self.sample_rate:
