@@ -9,6 +9,7 @@
 
 # Load necessary modules if required (example for Python)
 module load python/3.11.7  # Adjust or remove based on your environment
+module load conda/latest
 
 # Activate virtual environment and run the job
 cd /home/oschmerling_umass_edu/dysarthric-speech-recognition/
