@@ -13,6 +13,6 @@ module load conda/latest
 
 # Activate virtual environment and run the job
 cd /home/oschmerling_umass_edu/dysarthric-speech-recognition/
-conda env create -f environment.yml -n cenv
+# conda env create -f environment.yml -n cenv #uncomment this when running in a new environment
 conda activate cenv
 python modelCompare.py --domain_a_dir "/home/oschmerling_umass_edu/UASpeech/Copy of UASpeech_original_C" --domain_b_dir "/home/oschmerling_umass_edu/UASpeech/Copy of UASpeech_original_FM"
